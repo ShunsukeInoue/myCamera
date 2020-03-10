@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z6g-eW-FB1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Xxg-5S-Icy">
+            <objects>
+                <navigationController id="z6g-eW-FB1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wLd-U4-AUg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Z7-Tj-V9s" kind="relationship" relationship="rootViewController" id="zWc-oo-Si4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cu-Ho-4MB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="-163"/>
+        </scene>
+        <!--Main Menu View Controller-->
+        <scene sceneID="5nn-Xs-1V0">
+            <objects>
+                <viewController id="2Z7-Tj-V9s" customClass="MainMenuViewController" customModule="MyCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zsh-Ps-FuH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-S8-ARX">
+                                <rect key="frame" x="152" y="425.5" width="110" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="カメラへ"/>
+                                <connections>
+                                    <action selector="goToCamera:" destination="2Z7-Tj-V9s" eventType="touchUpInside" id="gL1-7A-lCI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G3P-S8-ARX" firstAttribute="centerX" secondItem="zsh-Ps-FuH" secondAttribute="centerX" id="7jg-lP-0qK"/>
+                            <constraint firstItem="G3P-S8-ARX" firstAttribute="centerY" secondItem="zsh-Ps-FuH" secondAttribute="centerY" id="YiO-1j-jVU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qj9-Wh-yX5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8fm-Se-rlV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5K-KX-lFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="-163"/>
+        </scene>
+    </scenes>
+</document>
